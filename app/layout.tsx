@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 import type React from "react"
 
@@ -29,6 +30,7 @@ export default function RootLayout({
           ></div>
         </div>
         <div className="relative z-10">{children}</div>
+        <Analytics />
       </body>
     </html>
   )
